@@ -28,9 +28,13 @@ a:hover {
 }
 
 .navbar-light {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
   height: 100px;
   border-bottom: 1px solid #2f2c29;
-  background-color: #f1eae5;
+  background-color: transparent;
   color: #2f2c29;
 }
 
@@ -147,11 +151,11 @@ a:hover {
 }
 
 .section {
-  padding-top: 50px;
+  padding-top: 140px;
   padding-bottom: 0px;
 }
 
-.page-header {
+.h-1 {
   font-family: 'Spectral SC', sans-serif;
   font-size: 100px;
   line-height: 160%;
@@ -220,7 +224,12 @@ a:hover {
 }
 
 .switch-trigger {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  z-index: 9999;
   margin-right: 30px;
+  margin-bottom: 30px;
   padding: 20px;
 }
 
@@ -267,7 +276,7 @@ a:hover {
   line-height: 160%;
 }
 
-.header {
+.h2 {
   margin-top: 60px;
   font-family: 'Spectral SC', sans-serif;
   font-size: 42px;
@@ -332,6 +341,7 @@ a:hover {
 
 .switch-icon {
   display: block;
+  height: 25px;
 }
 
 .column {
@@ -518,6 +528,7 @@ a:hover {
 
 .attributes-section-wrapper {
   max-width: 1200px;
+  margin-top: 70px;
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -559,10 +570,14 @@ a:hover {
 }
 
 .navbar-dark {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
   display: none;
   height: 100px;
   border-bottom: 1px solid #e8e5c8;
-  background-color: #2f2c29;
+  background-color: transparent;
   color: #2f2c29;
 }
 
@@ -645,7 +660,6 @@ a:hover {
 }
 
 .image {
-  width: 150%;
   max-width: none;
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
@@ -713,7 +727,7 @@ a:hover {
   letter-spacing: 0.5px;
 }
 
-.book-page-chupter-name {
+.book-h1 {
   font-family: 'Spectral SC', sans-serif;
   font-size: 60px;
   line-height: 160%;
@@ -791,21 +805,202 @@ a:hover {
   line-height: 160%;
 }
 
+.hero-section {
+  min-height: 600px;
+  padding-top: 140px;
+  padding-bottom: 0px;
+  background-image: -webkit-linear-gradient(270deg, hsla(25, 30%, 92%, .6), #f1eae5), url('../images/athien-final2.jpg');
+  background-image: linear-gradient(180deg, hsla(25, 30%, 92%, .6), #f1eae5), url('../images/athien-final2.jpg');
+  background-position: 0px 0px, 50% 35%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll, fixed;
+}
+
+.container-3 {
+  padding-right: 12px;
+}
+
+.in-page-navigation-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 67px 30px;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.in-page-navigation-link {
+  opacity: 0.5;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+  font-family: 'Spectral SC', sans-serif;
+  color: #2f2c29;
+  font-size: 20px;
+}
+
+.in-page-navigation-link:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.logo-small {
+  display: none;
+}
+
+.hero-section-llight {
+  min-height: 550px;
+  padding-top: 140px;
+  padding-bottom: 0px;
+  background-image: -webkit-linear-gradient(270deg, hsla(25, 30%, 92%, .6), #f1eae5), url('../images/athien-final2.jpg');
+  background-image: linear-gradient(180deg, hsla(25, 30%, 92%, .6), #f1eae5), url('../images/athien-final2.jpg');
+  background-position: 0px 0px, 50% 35%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll, fixed;
+}
+
+.hero-section-dark {
+  display: none;
+  min-height: 550px;
+  padding-top: 140px;
+  padding-bottom: 0px;
+  background-image: -webkit-linear-gradient(270deg, rgba(47, 44, 41, .6), #2f2c29), url('../images/athien-final2.jpg');
+  background-image: linear-gradient(180deg, rgba(47, 44, 41, .6), #2f2c29), url('../images/athien-final2.jpg');
+  background-position: 0px 0px, 50% 35%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll, fixed;
+  opacity: 0;
+}
+
+.h3 {
+  margin-top: 30px;
+  font-family: 'Spectral SC', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.images-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.hero-image {
+  width: auto;
+  max-width: 23%;
+  margin: 20px 8px;
+}
+
+.image-name {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+  font-family: 'Spectral SC', sans-serif;
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: 400;
+  text-align: center;
+}
+
+.h-4 {
+  margin-top: 30px;
+  font-family: 'Spectral SC', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.slider {
+  height: auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.slide-nav {
+  display: none;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 @media (max-width: 991px) {
-  .page-header {
+  .h-1 {
     font-size: 50px;
   }
   .page-subheader {
     font-size: 16px;
   }
   .switcher-wrapper {
-    position: relative;
+    position: fixed;
+  }
+  .switch-icon {
+    height: 15px;
   }
   .book-page-chapter-number {
     font-size: 50px;
   }
-  .book-page-chupter-name {
+  .book-h1 {
     font-size: 50px;
+  }
+  .in-page-navigation-link {
+    font-size: 16px;
+  }
+  .logo-large {
+    display: none;
+  }
+  .logo-small {
+    display: block;
+  }
+  .image-3 {
+    display: none;
+  }
+  .hero-image {
+    max-width: 40%;
   }
 }
 
@@ -832,12 +1027,23 @@ a:hover {
     font-size: 20px;
     line-height: 130%;
   }
-  .page-header {
+  .menu-button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 42px;
+  }
+  .h-1 {
     display: block;
     font-size: 30px;
   }
   .page-subheader {
     line-height: 160%;
+  }
+  .divider-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .basically-wrapper {
     padding-top: 0px;
@@ -848,14 +1054,17 @@ a:hover {
     padding-left: 20px;
     line-height: 160%;
   }
+  .switch-trigger {
+    margin-right: 15px;
+  }
   .switcher-wrapper {
-    position: relative;
+    position: fixed;
   }
   .paragraph {
     display: inline-block;
     font-size: 20px;
   }
-  .header {
+  .h2 {
     font-size: 32px;
     line-height: 160%;
   }
@@ -915,7 +1124,11 @@ a:hover {
     -ms-flex-align: center;
     align-items: center;
   }
+  .small-image {
+    display: block;
+  }
   .smaller-image-wrapper {
+    display: block;
     width: 100%;
     height: 400px;
   }
@@ -926,13 +1139,50 @@ a:hover {
     display: block;
     font-size: 30px;
   }
-  .book-page-chupter-name {
+  .book-h1 {
     display: block;
     font-size: 30px;
   }
   .intermediary-word {
     display: inline-block;
     font-size: 20px;
+  }
+  .hero-section {
+    min-height: 400px;
+    padding-top: 108px;
+  }
+  .in-page-navigation-container {
+    max-width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    line-height: 160%;
+  }
+  .in-page-navigation-link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .logo-small {
+    display: block;
+  }
+  .hero-section-llight {
+    min-height: 400px;
+    padding-top: 108px;
+  }
+  .hero-section-dark {
+    min-height: 400px;
+    padding-top: 108px;
+  }
+  .hero-image {
+    max-width: 100%;
+  }
+  .slider {
+    height: auto;
   }
 }
 

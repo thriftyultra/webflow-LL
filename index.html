@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Mar 22 2018 18:59:27 GMT+0000 (UTC)  -->
-<html data-wf-page="5ab125dcedfae6bd6ad3ceac" data-wf-site="5ab125dcedfae63fa8d3ceab">
+<!--  Last Published: Sat Mar 24 2018 18:23:17 GMT+0000 (UTC)  -->
+<html data-wf-page="5ab6558541c0910c05cced26" data-wf-site="5ab125dcedfae63fa8d3ceab">
 <head>
   <meta charset="utf-8">
-  <title>loot&amp;lore</title>
+  <title>Hero page</title>
+  <meta content="Hero page" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -22,7 +23,7 @@
     <div class="container w-container">
       <div class="search-button"><img src="images/search.svg" height="25"></div><a href="#" class="brand-name-wrapper-and-link w-nav-brand"><img src="images/logo-dark.svg" height="25"></a>
       <nav role="navigation" class="nav-menu w-nav-menu">
-        <div class="navigation-logo-wrapper"><img src="images/alternative_logo.svg" height="75"></div><a href="index.html" class="navigation-link w-nav-link">Attributes</a><a href="book-chapter.html" class="navigation-link w-nav-link">Book</a></nav>
+        <div class="navigation-logo-wrapper"><img src="images/alternative_logo.svg" height="75"></div><a href="hero-page.html" class="navigation-link w-nav-link">Attributes</a><a href="book-chapter.html" class="navigation-link w-nav-link">Book</a></nav>
       <div class="menu-button w-nav-button"><img src="images/menu-dark.svg" height="15" class="image-2"></div>
     </div>
   </div>
@@ -33,13 +34,10 @@
       <div class="menu-button w-nav-button"><img src="images/menu.svg" height="15" class="menu-button-image"></div>
       <div class="search-button"><img src="images/search-light.svg" height="25"></div>
     </div>
-  </div>
-  <div class="switcher-wrapper">
-    <div class="container switch"><a href="#" data-w-id="c82e7613-965f-b766-595c-c2a923a524f2" class="switch-trigger w-inline-block"><img src="images/switch.svg" height="25" class="switch-icon"></a></div>
-  </div>
-  <div class="section">
+  </div><a href="#" class="switch-trigger w-inline-block"><img src="images/switch.svg" height="25" class="switch-icon"></a>
+  <div data-w-id="c2fda9b0-b5ad-e59f-2208-7a75bf1afa6b" class="section">
     <div class="page-headers-container w-container">
-      <h1 class="page-header">Attributes</h1>
+      <h1 class="h-1">Attributes</h1>
       <div data-w-id="fcb374f4-2df6-4bed-893e-abb9169fdebb" class="page-subheader">“Charm is a woman’s strength, just as strength is a man’s charm” - Havelock Ellis</div>
     </div>
   </div>
@@ -49,9 +47,9 @@
   <div class="basically-wrapper">
     <div class="text-container w-container">
       <div class="paragraph"><a>Attributes</a> are the foundation of character development. Attributes determine the base physical, mental, and influential capabilities of a character. There are two distinct types of Attributes; Point Attributes and Pool Attributes.</div>
-      <div class="header">Pool attributes</div>
+      <div class="h2">Pool attributes</div>
       <div class="paragraph">In addition to the eight Point Attributes, every character is possessed of four Pool Attributes; <span class="health">Health (HP)</span>, <span class="endurance">Endurance (EP)</span>, <span class="focus">Focus (FP)</span>, and <span class="disposition">Disposition (DP)</span>. These Pool Attributes are the resources used to fuel and execute Abilities, as well as a measure of your character’s vitality. Each Pool Attributes’ score is initially derived from the sum of the corresponding Point Attributes.</div>
-      <div class="header">Point Attributes</div>
+      <div class="h2">Point Attributes</div>
       <div class="table">
         <div class="table-row w-row">
           <div class="header-column w-col w-col-6 w-col-small-6 w-col-tiny-6">
@@ -105,7 +103,7 @@
       <div class="paragraph">Every character is possessed of eight Point Attributes at their core; Strength (Str), Fortitude (Frt), Dexterity (Dex), Stamina (Sta), Intellect (Int), Spirit (Spi), Appearance (Apr), and Persona (Per). These Point Attributes affect and shape every aspect of a character&#x27;s life. Each Point Attribute begins with a score of 6, and an additional 52 points to be distributed amongst them. No Point Attribute may exceed 20 during character creation, nor dip below 6. Point Attributes determine the base value of your Pool Attributes, and each provide modifiers to a variety of Statistics.</div>
       <div class="attributes-section-wrapper">
         <div class="health-header-image-and-text-block">
-          <div class="image-wrapper"><img src="images/hBB1Ejk.jpg" srcset="images/hBB1Ejk-p-500.jpeg 500w, images/hBB1Ejk.jpg 800w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 52vw, (max-width: 991px) 398.390625px, 525.578125px" class="image"></div>
+          <div class="image-wrapper"><img src="images/health.png" class="image"></div>
           <div class="image-text-wrapper">
             <div class="image-header">Health</div>
             <div class="header-image-paragraph">Health (HP) is the measure of the character&#x27;s vitality, and indicates the amount of damage a character can take before falling in battle. In some cases Health may be utilized as a resource to fuel Abilities, but this is not the primary purpose. Health is derived from the sum of the character&#x27;s Strengthand Fortitude scores.<br>- Health = Strength + Fortitude<br>- Health Regeneration per Second = <br>((Fortitude Modifier+6)*10)/60</div>
@@ -130,22 +128,22 @@
       </div>
       <div class="attributes-section-wrapper">
         <div class="endurance-header-image-and-text-block">
-          <div class="image-wrapper"><img src="images/HFLRGjY.jpg" srcset="images/HFLRGjY.jpg 500w, images/HFLRGjY.jpg 800w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 52vw, (max-width: 991px) 398.390625px, 525.578125px" class="image"></div>
+          <div class="image-wrapper"><img src="images/endurance.png" class="image"></div>
           <div class="image-text-wrapper">
-            <div class="image-header">Health</div>
+            <div class="image-header">Endurance</div>
             <div class="header-image-paragraph">Health (HP) is the measure of the character&#x27;s vitality, and indicates the amount of damage a character can take before falling in battle. In some cases Health may be utilized as a resource to fuel Abilities, but this is not the primary purpose. Health is derived from the sum of the character&#x27;s Strengthand Fortitude scores.<br>- Health = Strength + Fortitude<br>- Health Regeneration per Second = <br>((Fortitude Modifier+6)*10)/60</div>
           </div>
         </div>
         <div class="smaller-image-wraper">
           <div class="endurance-smaller-image-and-text-block">
-            <div class="smaller-image-wrapper"><img src="images/n6Ff7m3.jpg" srcset="images/n6Ff7m3.jpg 500w, images/n6Ff7m3.jpg 800w" sizes="(max-width: 479px) 91vw, (max-width: 767px) 39vw, (max-width: 991px) 296.59375px, 392px" class="small-image"></div>
+            <div class="smaller-image-wrapper"><img src="images/n6Ff7m3.jpg" srcset="images/n6Ff7m3-p-500.jpeg 500w, images/n6Ff7m3.jpg 800w" sizes="(max-width: 479px) 91vw, (max-width: 767px) 39vw, (max-width: 991px) 296.59375px, 392px" class="small-image"></div>
             <div class="smaller-text-wrapper">
               <div class="smaller-image-header">Health</div>
               <div class="image-paragraph">Strength (Str) measures a character&#x27;s physical power; the ability to pierce armor, interrupt actions, and deflect attacks.<br>- Armor Penetration<br>- Ability Disruption<br>- Deflect Avoidance</div>
             </div>
           </div>
           <div class="endurance-smaller-image-and-text-block">
-            <div class="smaller-image-wrapper"><img src="images/HFLRGjY.jpg" srcset="images/HFLRGjY.jpg 500w, images/HFLRGjY.jpg 800w" sizes="(max-width: 479px) 91vw, (max-width: 767px) 39vw, (max-width: 991px) 296.59375px, 392px" class="small-image"></div>
+            <div class="smaller-image-wrapper"><img src="images/HFLRGjY.jpg" srcset="images/HFLRGjY-p-500.jpeg 500w, images/HFLRGjY.jpg 800w" sizes="(max-width: 479px) 91vw, (max-width: 767px) 39vw, (max-width: 991px) 296.59375px, 392px" class="small-image"></div>
             <div class="smaller-text-wrapper">
               <div class="smaller-image-header">Health</div>
               <div class="image-paragraph">Strength (Str) measures a character&#x27;s physical power; the ability to pierce armor, interrupt actions, and deflect attacks.<br>- Armor Penetration<br>- Ability Disruption<br>- Deflect Avoidance</div>
